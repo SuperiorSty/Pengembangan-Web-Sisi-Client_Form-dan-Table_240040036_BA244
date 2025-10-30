@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input data Mahasiswa</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            background-color: #fafafa;
+        }
+        table, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 15px;
+        }
+        td{
+            text-align: center;
+        }
+        .header{
+            background-color: #E74C3C;
+            color:white;
+        }
+        .isianP{
+            background-color: white;
+        }
+        .isianA{
+            background-color: #f0f0f0;
+        }
+        #judul{
+
+        }
+        #form{
+            padding: 20px;
+            margin: 10px;
+            background-color: #f7f7f7;
+            border: 1px solid #e0e0e0;
+            border-left: 5px solid #E74C3C;
+            border-radius: 8px;            
+        }
+
+    </style>
+
+</head>
+<body>
+    <H1 id="judul">Data:</H1>
+    <form id="form">
+        <label for="Nim">Nim</label><br>
+        <input type="text" id="Nim" name="Nim"><br>
+        <label for="Name">Nama</label><br>
+        <input type="text" id="Name" name="Name"><br>
+        <p>Choose your gender</p>
+        <input type="radio" id="Pria" name="Gender" value="PRIA">
+        <label for="Pria">Pria</label><br>
+        <input type="radio" id="Wanita" name="Gender" value="WANITA">
+        <label for="Wanita">Wanita</label><br>
+        <br>
+        <label for="Kota">Kota</label>
+        <select name="Kota" id="Kota">
+            <option value="Tabanan">Tabanan</option>
+            <option value="Denpasar">Denpasar</option>
+        </select><br>
+        <br>
+        <label for="date">Tanggal lahir</label><br>
+        <input type="date" id="tanggallahir" name="tanggallahir"><br>
+        <br>
+        <label for="Alamat">Alamat</label><br>
+        <input type="text" id="Alamat" name="Alamat"><br>
+        <label for="No.Hp">Nomor Telepon</label><br>
+        <input type="text" id="Num" name="Num"><br>
+        <label for="email">Email</label><br>
+        <input type="text" id="email" name="email"><br>
+        <br>
+        <label for="Hobi">Hobi</label>
+        <select name="hobi" id="hobi">
+            <option value="Gaming">Gaming</option>
+            <option value="Olga">Olah Raga</option>
+            <option value="Coding">Coding</option>
+        </select><br>
+    </form>
+    <br>
+    <table style="width: 100%;">
+        <tr class="header">
+            <th>NIM</th>
+            <th>Nama</th>
+            <th>Gender</th>
+            <th>Tempat Lahir</th>
+            <th>Alamat</th>
+            <th>No.Hp</th>
+            <th>Email</th>
+            <th>Hobi</th>
+        </tr>
+        <tr class="isianP">
+            <td>1000</td>
+            <td>Satya Devra</td>
+            <td>Pria</td>
+            <td>Denpasar</td>
+            <td>Jl Kebahagiaan</td>
+            <td>08292929</td>
+            <td>Stikom@Bali.co.id</td>
+            <td>Gaming</td>
+        </tr>
+        <tr class="isianA">
+            <td>2000</td>
+            <td>Ganen Gaming</td>
+            <td>Pria</td>
+            <td>Denpasar</td>
+            <td>Jl Kesenangan</td>
+            <td>086767</td>
+            <td>Stikom@Bali.co.id</td>
+            <td>Gaming</td>
+        </tr>
+        <tr class="isianP">
+            <td>3000</td>
+            <td>Ghanskuy</td>
+            <td>Pria</td>
+            <td>Tabanan</td>
+            <td>Jl Ketenaran</td>
+            <td>086969420</td>
+            <td>Stikom@Bali.co.id</td>
+            <td>Olah Raga</td>
+        </tr>
+        <tr class="isianA">
+            <td>4000</td>
+            <td>Kusuma Raja Koding</td>
+            <td>Pria</td>
+            <td>Denpasar</td>
+            <td>Jl Logika</td>
+            <td>0876767420</td>
+            <td>Stikom@Bali.co.id</td>
+            <td>Coding</td>
+        </tr>
+    </table>
+</body>
+</html>
